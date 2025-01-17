@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/clock.css" />
+		<script type="module" src="js/script.js"></script>
+		<script type="module" src="js/clock.js"></script>
+		<title>Application météo</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Horloge -->
+			<div class="clock-container">
+				<div class="clock">
+					<div class="wrap">
+						<span class="hour"></span>
+						<span class="minute"></span>
+						<span class="second"></span>
+						<span class="dot"></span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Informations Météo -->
+			<div class="weather-info">
+				<h1 class="date">Date</h1>
+				<div class="city-temp">
+					<div class="temp-block">
+						<span class="city"></span>
+						<div class="temperature"></div>
+					</div>
+					<img
+						src=""
+						id="icon"
+						alt="Weather Icon"
+						class="weather-icon"
+					/>
+				</div>
+				<div class="search-container">
+					<form id="cityForm">
+						<input
+							type="text"
+							id="cityInput"
+							placeholder="Entrez une ville"
+						/>
+						<button type="submit" id="searchBtn">Rechercher</button>
+					</form>
+				</div>
+			</div>
+
+			<!-- Formulaire de Recherche -->
+		</div>
+	</body>
+</html>
